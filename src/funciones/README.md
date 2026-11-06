@@ -142,4 +142,32 @@ def resta(a,b):
     """
     return a-b
 ```
-> [!WARNING] en el proceso de documentacion tener encuenta de incluir a lo menos lo siguiente: 1. breve explicacion sbre que hace la funcion 2. especificaciones y caracteristicas de los parametros incluyendo sus tipos. 3. restriccines de la funcion. 4. el valor que retorna y sus caracteristicas
+> [!WARNING] En el proceso de documentacion tener encuenta de incluir a lo menos lo siguiente:
+> 1. breve explicacion sbre que hace la funcion
+> 2. especificaciones y caracteristicas de los parametros incluyendo sus tipos.
+> 3. restricciones de la funcion.
+> 4. el valor que retorna y sus caracteristicas
+
+## type-hints (Anotaciones de tipo)
+Nos permite inidicar que tipo de dato tendra una variable, parametro y el valor de retorno de una funcion.
+Para utilizarlos debemos indicar el tipo de dato despues del separador `:`, en el caso del valor de retorno usaremos `->` luego el tiipo de dato y finalmente el seprador `:` que indica el inicio del bloque de codigo de la funcion.
+Las `anotaciones de tipo` son una herramienta que nos permite complementar la documentacion de nuestro codigo.
+**tenemos los siguientes**
+- **Simples**
+  - int -> numeros enteros
+  - float -> numeros decimales
+  - bool -> datos boleanos (verdad o falso)
+  - str -> datos de tipo texto o cadena
+  - list -> listas `[]`
+  - tuple -> tuplas `()`
+  - dict -> diccionarios `{}`
+- **Compuestos**
+  existen casos en los que necesitamos mas expresividad en la *anotacion de tipos* ¿Que ocurre si queremos indicar una *lista de cadenas* o un *conjunto de enteros*.?
+  - list[str] -> lista de cadenas de texto
+  - list[int] -> lista de numeros enteros
+  - dict[str,float] -> diccionario donde las claves son cadenas de texto y los valoresson flotantes/decimales.
+- **Multiples**
+  En el caso que queramos indicar que un determinado parametr puede ser de un `tipo o de otro` tenesmo que especificarlo usando el operdor `|`
+  - tuple|dict -> puede ser dato de tipo tupla o diccionario
+  - list[srt|int] -> lista cuyos elemntos pueden ser cadena de texto o ineteros
+  - dict[srt|int,float|int] ->
