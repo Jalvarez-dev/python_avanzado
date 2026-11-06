@@ -1,1 +1,1 @@
-# crear un programa que asigne un puntje a cda letra del abcdarios y que un funcion me permita saber la letra que teng menor puntaje mayr puntaje y la media
+# crear un programa que asigne un puntje a cda letra del abcdarios y que un funcion me permita saber la letra que teng menor puntaje mayor puntaje y la media
